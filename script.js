@@ -1,8 +1,8 @@
 function Car (make, model) {
 	this.make = make;
-	this. model = model;
+	this.model = model;
 }
-Car.prototype.getMakeModel() = function{
+Car.prototype.getMakeModel() = function(){
 	return {`${this.make} ${this.model}`};
 }
 function SportsCar(make, model, topSpeed) {
@@ -11,10 +11,10 @@ function SportsCar(make, model, topSpeed) {
 }
 
 SportsCar.prototype = Object.create(Car.prototype);
-SportsCar.prototype.construct = SportsCar;
+SportsCar.prototype.constructor = SportsCar;
 
-SportsCar.prototype.getTopSpeed = function{
-	return {`${this.topSpeed}`};
+SportsCar.prototype.getTopSpeed = function(){
+	return this.topSpeed;
 }
 
 window.Car=Car;
