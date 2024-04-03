@@ -20,4 +20,3 @@ SportsCar.prototype.getTopSpeed=function(){
 
 window.Car=Car;
 window.SportsCar=SportsCar;
-window.SportsCar=SportsCar;
